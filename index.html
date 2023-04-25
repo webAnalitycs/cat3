@@ -70,10 +70,31 @@ dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   event: "purchase",
   ecommerce: {
-    item_id: "1",
-    item_name: "ONE",
-    currency: "Dollars",
-    affiliation: "online",	  
+	  items:
+	  items: [
+     {
+	     index:0,
+	     
+	     item_id: "ITM_1",
+	     
+	     item_name: "ONE",
+	     
+	     affiliation: "Google",
+	     
+             currency: "Dollars"
+    },
+    {
+	     index:1,
+	     
+	     item_id: "ITM_2",
+	     
+	     item_name: "TWO",
+	     
+	     affiliation: "Facebook",
+	     
+             currency: "Euro"
+
+    }]
   }
 });
 	</script>
@@ -122,14 +143,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html" id = "p1">Purchase</a></button><br />
 </br></br>
 <p>
 &emsp;  &emsp;  <img src="img/2.jpg" width="500" height="200">
 </p>
 
 &emsp;  &emsp;  &emsp;  &emsp;  <button><a href="cart.html" style="font: bold 24px Arial; color:red;">Add-to-cart</a></button> &emsp;  &emsp;  			 
-<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html">Purchase</a></button><br />
+<button type="button" style="font: bold 24px  Arial; color:green;"><a href="sucess.html" id = "p2">Purchase</a></button><br />
 
 </body>
 
