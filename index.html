@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 	
 
-    <script>
+<script>
         $(document).ready(function () {
             $('#review-slider-content').lightSlider({
                 auto: true,
@@ -64,7 +64,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 ]
             });
         });
-	    </script>
+
+// Q3
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  event: "purchase",
+  ecommerce: {
+    item_id: "1",
+    item_name: "ONE",
+    currency: "Dollars",
+    affiliation: "online",	  
+  }
+});
+	</script>
+
 	
     <title>Course Page</title>
 </head>
